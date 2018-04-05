@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
-      browserSync    	= require('browser-sync').create();
+      browserSync = require('browser-sync').create();
 
 const path = {
   css: './assets/css',

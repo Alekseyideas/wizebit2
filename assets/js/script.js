@@ -20,7 +20,7 @@ $(document).ready( function() {
 				var sectionTop =  $( this ).position().top;
 				var sectionBottom = sectionTop + $( this ).outerHeight() + 300;
 				if ( ( scrollPosition > sectionTop ) && ( scrollPosition < sectionBottom ) ) {
-          /*if ( 'top' != sectionId ) {
+          if ( 'top' != sectionId ) {
             if ( 0 >= $( '#' + sectionId + ' .left-side .section-title-block .animation-text-wrapper' ).length ) {
               animBlockWrapper = '<div class="animation-wrapper"></div>';
               animTextBlockWrapper = '<div class="animation-text-wrapper"></div>';
@@ -33,7 +33,7 @@ $(document).ready( function() {
                 }
               });
             }
-          }*/
+          }
 				} else {
 					if ( 'top' != sectionId ) {
 						if ( 0 < $( '#' + sectionId + ' .left-side .section-title-block .animation-text-wrapper' ).length ) {
