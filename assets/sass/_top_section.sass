@@ -1,0 +1,209 @@
+.top-block-wrapper
+	padding-top: 120px
+	position: relative
+
+	@media screen and (max-width: 1200px)
+		padding-top: 6vw !important
+
+	.top-block
+		&.container
+			margin-top: -35px !important
+
+			@media screen and (max-width: 600px)
+				margin-top: 0 !important
+				width: 60% !important
+
+			@media screen and (max-width: 480px)
+				margin-top: 5% !important
+
+		.anim-logo
+			margin: 0 auto
+			max-width: 586px
+			position: relative
+			width: 100%
+
+			@media screen and (max-width: 380px)
+				margin: 50px auto 0;
+
+			.wizebit-logo-link
+				bottom: 130px
+				display: block
+				height: 23px
+				left: 0
+				margin: 0 auto
+				position: absolute
+				right: 0
+				width: 115px
+
+				@media screen and (max-width: 600px)
+					bottom: 24%
+					width: 20%
+
+					img
+						height: auto
+						width: 100%
+
+				@media screen and (max-width: 380px)
+					bottom: 16%
+
+				img
+					display: block
+
+		&-heading-wrapper
+			text-align: center
+
+			h2, h3
+				font-family: montserrat-ulrtalight
+				margin: 0
+				text-transform: uppercase
+
+			h2
+				color: #666
+				font-size: 24px
+
+				@media screen and (max-width: 600px)
+					font-size: 16px
+
+			h3
+				color: #999
+				font-size: 18px
+
+				@media screen and (max-width: 600px)
+					font-size: 14px
+	.left-nav
+		left: 30px
+		position: fixed
+		top: 20px
+
+		@media screen and (max-width: 992px)
+			top: 50px
+
+			.hamburger
+				cursor: pointer
+				display: block !important
+				position: absolute
+				left: 0
+				top: -30px
+
+				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+					background-color: #29baec
+
+			.hamburger--emphatic.is-active 
+				.hamburger-inner
+					background-color: transparent
+		@media screen and (max-width: 480px)
+			left: 5px
+
+	.right-nav
+		right: 68px;
+		position: absolute
+		top: 50px
+
+		@media screen and (max-width: 992px)
+			right: 0
+
+		.hamburger
+			cursor: pointer
+			position: absolute
+			right: -65px
+			top: -30px
+
+			@media screen and (max-width: 992px)
+				right: 0
+
+	.nav-menu
+		z-index: 999
+
+		.menu
+			li
+				margin-bottom: 15px;
+				a
+					color: #666
+					font-family: digital-7
+					font-size: 12px
+					outline: none
+					position: relative
+					text-decoration: none
+					text-transform: uppercase
+
+					&:hover, &.active-scrollsection, &.curent_page
+						color: #fff
+
+						&:before
+							display: block
+
+							@media screen and (max-width: 480px)
+								display: none
+
+						.square-wrapper 
+							display: block
+
+					&:before
+						content: "_"
+						display: none
+						position: absolute
+						top: 0
+
+		.left-menu
+			@media screen and (max-width: 992px)
+				display: none
+
+			li
+				text-align: left
+
+				a
+					padding-left: 6px
+
+					&.active-scrollsection
+						.square-wrapper 
+							display: block
+
+					&:before
+						left: 0
+
+					.square-wrapper
+						display: none
+						height: 15px
+						left: -20px
+						position: absolute
+						top: -3px
+						width: 15px
+
+						.square-block
+							background-color: #2e92c8
+							display: block
+							height: 100%
+							width: 100%
+
+		.right-menu
+			li
+				text-align: right
+
+				a
+					padding-right: 6px
+					
+					&:before
+						right: 0
+
+					&:hover, &.curent_page
+						.square-block
+							display: block
+
+					.square-block
+						background-color: #fff
+						display: none
+						height: 10px
+						position: absolute
+						right: -19px
+						top: 1px
+						width: 10px
+
+.what-we-do-block-wrapper
+	background-image: url("../img/globe.svg")
+	background-size: 100% auto
+
+
+	.what-we-do-block
+		.right-side
+			.cyber-crime-stats-list-wrapper
+				margin: auto

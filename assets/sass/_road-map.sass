@@ -1,0 +1,116 @@
+.road-map
+  @media screen and (max-width: 768px)
+    .right-side
+      float: none !important
+  .section-title
+    font-weight: 300
+  &__blocks
+    display: flex
+    @media screen and (max-width: 550px)
+      display: block
+  &__block
+    width: 50%
+    @media screen and (max-width: 550px)
+      width: 100%
+    &--green
+      .road-map__block-title
+        color: #66cc99
+      .road-map__line
+        background: #66cc99
+    &--blue
+      .road-map__block-title
+        color: #3aaae2
+      .road-map__line
+        background: #3aaae2
+    &--4
+      margin-top: 30px
+      margin-left: 20px
+      @media screen and (max-width: 550px)
+        margin: 60px 0 20px
+      @media screen and (min-width: 1300px)
+        width: 246px
+  &__block-title
+    font-size: 14px
+    padding-left: 10px
+    margin: 0 0 10px 0
+    display: block
+    text-transform: uppercase
+    @media screen and (min-width: 1300px)
+      white-space: nowrap
+  &__block-box
+    position: relative
+    box-sizing: border-box
+    padding: 10px 10px 20px
+    width: 95%
+    border: 1px solid #8a8a8b
+    color: white
+    font-size: 13px
+    margin-bottom: 20px
+
+    li
+      font-weight: 300
+      font-family: 'Montserrat', sans-serif
+      font-size: 12px
+    @media screen and (min-width: 1300px)
+      min-width: 246px
+    li
+      margin: 5px
+    @media screen and (max-width: 550px)
+      width: 100%
+  &__line
+    position: absolute
+    bottom: -1.5px
+    right: 0
+    width: 90%
+    height: 3px
+    &--left
+      left: 0
+    @media screen and (max-width: 550px)
+      width: 100%
+  .prev-block-info
+    font-size: 14px
+    text-transform: uppercase
+    margin-top: 30px
+    margin-bottom: 20px
+    margin-left: 10px
+    color: #e1e1e1
+    position: relative
+    font-weight: 300
+    font-family: 'Montserrat', sans-serif
+    @media screen and (min-width: 1300px)
+      white-space: nowrap
+    &:before,
+    &:after
+      content: ''
+      display: block
+      width: 3px
+      height: 3px
+      background: #e1e1e1
+      border-radius: 50%
+      top: 8px
+      position: absolute
+    &:before
+      left: -20px
+    &:after
+      left: -10px
+
+  .right-side
+    display: block!important
+  .percent
+    position: absolute
+    top: 100%
+    margin-top: 10px
+    right: 20px
+    font-family: 'Montserrat', sans-serif
+    font-size: 20px
+    font-weight: 300
+    color: rgba(#fff,.4)
+
+  li.road-map__block-title
+    font-size: 18px
+    font-family: 'Montserrat', sans-serif
+    text-transform: uppercase
+    color: white
+    padding: 0
+
+

@@ -1,0 +1,64 @@
+.page__faq
+  background: url('../img/bhg.jpg') no-repeat center / cover !important
+  @media screen and (max-width: 1199px)
+    padding: 40px 0
+
+.faq-section
+  @media screen and (min-width: 994px)
+    width: 80%
+    margin: auto
+  &__title
+    font-size: 60px
+    margin-bottom: 25px
+    text-transform: uppercase
+    line-height: 1
+    font-family: 'Montserrat', sans-serif
+    letter-spacing: 1.44px
+    font-weight: normal
+    color: white
+    font-weight: bold
+    text-shadow: rgba(0, 0, 0, 0.34) 1px 0 5px
+
+  &__list
+    @media screen and (min-width: 769px)
+      display: flex
+      justify-content: space-between
+
+  &__items-wrapper
+    width: 100%
+    @media screen and (min-width: 769px)
+      width: 48%
+  &__item-title
+    font-family: 'Montserrat', sans-serif
+    padding: 5px 10px
+    font-size: 18px
+    transition: .2s
+    cursor: pointer
+    font-weight: normal
+    margin: 10px 0 0
+    //min-height: 37px
+    color: #cccccc
+    &:hover
+      background: white
+      color: black
+  &__item
+    opacity: 0
+    transition: .2s
+
+    &.active
+      .faq-section__item-title
+        color: black
+        background: white
+
+  &__item-info
+    background: rgba(#f3f3f3,.2)
+    padding: 5px 10px
+
+    font-size: 17px
+    display: none
+    p
+      color: white
+      text-align: left
+  .typed-strings
+    display: none
+

@@ -1,0 +1,53 @@
+.wizebox-block-wrapper
+  .section-title
+    display: block
+    font-weight: 300
+    font-size: 80px
+    margin: 0
+    @media screen and (max-width: 560px)
+      font-size: 50px
+    @media screen and (max-width: 350px)
+      font-size: 40px
+    span
+      font-weight: 600
+  .sub-title
+    font-size: 30px
+    color: #cccccc
+    margin: 0
+    font-weight: 400
+    text-align: right
+    font-family: 'Montserrat', sans-serif
+    @media screen and (max-width: 560px)
+      font-size: 20px
+  .section-info
+    p
+      text-align: left
+    h5
+      text-transform: uppercase
+      text-align: left
+      margin: 0 0 10px
+    &__them-us
+      display: flex
+      justify-content: space-between
+      @media screen and (max-width: 560px)
+        display: block
+      &>div
+        width: 48%
+        @media screen and (max-width: 560px)
+          width: 100%
+        p
+          font-size: 13px
+          text-align: justify
+          text-justify: initial
+          margin-top: 3px
+    &__title
+      text-align: left
+      font-weight: 300
+      color: #16b8ed
+
+  #path
+    width: 100%
+    margin: 0 0 30px 0
+    display: block
+    @media screen and (min-width: 1200px)
+      opacity: 0

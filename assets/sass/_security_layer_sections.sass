@@ -1,0 +1,132 @@
+.security-layer
+	&.voice-block
+		.section-title-block
+			.animation-text-wrapper
+				right: 0px
+
+	&.facial-block
+		.section-title-block
+			.animation-text-wrapper
+				right: 0px
+
+	&.memorized-block
+		.section-title-block
+			.animation-text-wrapper
+				right: 0px
+				
+	&.keys-block
+		.section-title-block
+			.animation-text-wrapper
+				right: 0px
+
+	.section-title-block
+		display: flex
+		flex-wrap: wrap
+		justify-content: right
+		margin-bottom: 58.1px
+		text-align: right
+
+		.animation-text-wrapper
+			order: 1
+			position: relative
+			text-align: right
+
+			@media screen and (max-width: 1200px)
+				max-height: 80px
+				right: 0 !important
+				width: 100%
+
+				.lottie
+					text-align: right
+					width: auto
+
+					svg
+						width: auto !important
+
+			@media screen and (max-width: 380px)
+				max-height: 40px
+
+		.security-layer-title
+			color: #239dc7
+			display: none
+			font-family: montserrat-ulrtalight
+			font-size: 67px
+			font-weight: normal
+			margin: 0 auto 5px
+			order: 2
+			padding-top: 10px
+			text-align: right
+			text-transform: uppercase
+			width: 100%
+
+			&:first-letter
+				font-family: 'Montserrat', sans-serif
+				font-weight: 600
+
+			span
+				display: block
+
+			.security-layer-sub-title
+				font-size: 36px
+				margin-top: -10px;
+
+		.security-layer-label
+			color: #cccccc
+			display: block
+			font-size: 14px
+			font-family: 'Montserrat', sans-serif
+			font-weight: 600
+			order: 3
+			position: relative
+			width: 100%
+
+			&:after
+				background-image: url("../img/security_layer_separate_line.png")
+				bottom: -3px
+				content: ""
+				height: 3px;
+				position: absolute
+				right: 2px
+				width: 143px
+
+	.security-layer-description-title
+		color: #fff
+		font-family: 'Montserrat', sans-serif
+		font-size: 18px
+		font-weight: 300
+		text-align: right
+		text-transform: uppercase
+
+	.security-layer-description
+		color: #999999
+		font-family: 'Montserrat', sans-serif
+		font-size: 17px
+		font-weight: 300
+		text-align: right
+
+		@media screen and (max-width: 1200px)
+			font-size: 14px
+
+.keys-block-wrapper
+	h2.section-title
+		text-transform: uppercase
+		font-family: 'Montserrat', sans-serif
+		font-weight: 300
+	h4.sub-title
+		font-size: 35px
+		text-transform: uppercase
+		font-family: 'Montserrat', sans-serif
+		margin-bottom: 40px
+	.keys__info
+		color: #999999
+		p
+			margin: 0
+			font-weight: 300
+			font-size: 14px
+	.keys__info-title
+		font-size: 18px
+		font-weight: 400
+		color: #3aaae2
+		margin: 20px 0
+
+		

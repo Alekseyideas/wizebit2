@@ -1,0 +1,184 @@
+body
+	margin: 0
+	padding: 0
+	overflow: auto !important
+
+	.clear
+		clear: both
+
+	.page-backgorund
+		background-image: url("../img/background.png")
+		background-size: cover
+		background-repeat: repeat
+		padding: 0 0px 0 0px
+
+		.page-wrapper
+			position: relative
+
+			.top-border-block-wrapper
+				background-image: url("../img/top_border_block_img.png")
+				background-repeat: no-repeat
+				background-position: center center
+				height: 29px
+				left: 0
+				margin: 0 auto
+				position: absolute
+				right: 0
+				text-align: center
+				top: 15px
+				width: 100px
+
+			.scroll-indicator-wrapper
+				display: block
+				height: 7px;
+				left: 0
+				margin: 0 auto;
+				position: absolute
+				right: 0
+				top: 80vh
+				width: 10px
+
+				@media screen and (max-width: 992px)
+					right: -4.5px;
+					margin: 0
+					left: unset
+
+				&:before
+					background-image: linear-gradient(to right, #3e81ac 10%, rgba(62, 129, 172, 0) 0%)
+					background-position: center
+					background-size: 10px 1px
+					background-repeat: repeat-x
+					content: ""
+					position: absolute
+					left: 3px
+					top: 3px;
+					height: 3px
+					transition: all ease .1s
+					width: 0px
+
+				&.active:before
+					width: 100px
+
+				.scroll-indicator
+					border: 2px solid #29baec;
+					display: block
+					height: 5px
+					transform: rotate( 45deg )
+					width: 5px
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+
+			.container
+				margin: 0 auto
+				max-width: 1192px
+				width: 80%
+
+				@media screen and (max-width: 500px)
+					width: 70%
+
+			.left-side, .right-side
+				width: 48%
+
+				@media screen and (max-width: 992px)
+					float: none
+					width: 100%
+
+			.left-side
+				float: left
+
+			.right-side
+				float: right
+			
+			section
+				background-image: linear-gradient(to bottom, #3e81ac 10%, rgba(62, 129, 172, 0) 0%)
+				background-position: center
+				background-size: 1px 10px
+				background-repeat: repeat-y
+				display: block
+				height: 100vh
+				padding-bottom: 120px
+				padding-top: 120px
+				position: relative
+
+				@media screen and (max-width: 992px)
+					background-position: right
+
+				@media screen and (max-width: 1200px)
+					height: 100vh
+					padding-bottom: 2.5vw
+					padding-top: 2.5vw
+
+				@media screen and (max-width: 992px)
+					height: auto
+
+				&.top-block-wrapper
+					background-image: none
+					padding-bottom: 80px
+				
+				.right-side
+					display: flex
+
+					.image-wrapper
+						margin: auto
+						height: 30vw
+						max-width: 700px
+
+				.animation-wrapper
+						height: 100%;
+						width: 100%;
+
+				&.blockchain-block-wrapper
+					.right-side
+						display: block !important
+
+			/* p
+				color: #999
+				font-family: 'Montserrat', sans-serif
+				font-size: 17px
+				font-weight: normal */
+
+  .section-title
+    color: #239dc7
+    font-family: 'Montserrat', sans-serif
+    text-align: right
+    font-size: 70px
+    margin: 0
+    @media screen and (max-width: 500px)
+      font-size: 40px
+      text-align: left
+
+  .sub-title
+    margin: 0
+    text-align: right
+    font-size: 25px
+    color: #cccccc
+    font-weight: 400
+    @media screen and (max-width: 500px)
+      font-size: 18px
+      text-align: left
+
+
+  .videoLink
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: white
+    transition: .2s
+    &:hover
+      color: #16b8ed
+    &:before
+      content: ''
+      display: block
+      width: 15px
+      height: 15px
+      margin-top: -2px
+      margin-right: 10px
+      background: url("../img/rhombus.png") no-repeat center / cover
+    @media screen and (max-width: 500px)
+      margin-top: 20px
+      float: none
+  .scrollsections
+    padding: 0 30px
+    box-sizing: border-box
