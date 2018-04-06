@@ -21,7 +21,7 @@ $(document).ready( function() {
 				var sectionBottom = sectionTop + $( this ).outerHeight() + 300;
 				if ( ( scrollPosition > sectionTop ) && ( scrollPosition < sectionBottom ) ) {
           if ( 'top' != sectionId ) {
-            if ( 0 >= $( '#' + sectionId + ' .left-side .section-title-block .animation-text-wrapper' ).length ) {
+            /*if ( 0 >= $( '#' + sectionId + ' .left-side .section-title-block .animation-text-wrapper' ).length ) {
               animBlockWrapper = '<div class="animation-wrapper"></div>';
               animTextBlockWrapper = '<div class="animation-text-wrapper"></div>';
               $( '#' + sectionId + ' .left-side .section-title-block' ).append( animTextBlockWrapper );
@@ -32,7 +32,7 @@ $(document).ready( function() {
                   $( '#' + sectionId + ' .image-wrapper .ai_label' ).show();
                 }
               });
-            }
+            }*/
           }
 				} else {
 					if ( 'top' != sectionId ) {
@@ -48,7 +48,13 @@ $(document).ready( function() {
 			});
 		}
 	});
+
+
+
+
+
 	if (  992 < $( window ).width() ) {
+
 		$( 'section .container' ).each( function() {
 			var parentBlock = $( this ).parents( 'section' );
 			var sideBlockHeight = $( this ).children( '.left-side' ).height();
@@ -62,7 +68,7 @@ $(document).ready( function() {
 	if ( 991 < $( window ).width() ) {
 		$( '.scrollsections' ).scrollSections( {
 			createNavigation: false,
-			navigation: true,
+			navigation: false,
 			before: function( $currentSection, $nextSection ) {
 				$( '#scrollIndicator' ).removeClass( 'active' )
 			},
@@ -85,12 +91,31 @@ $(document).ready( function() {
 					}
 
 				}
+        if(sectionId==='wizebox-mini'){
+          $('.wizebox-mini-image').fadeIn();
+				}
 
 				if(sectionId==='faq'){
-          textTyping();
+
+
+
+        	if(!$('#faq').hasClass('active')){
+            textTyping();
+					}
+        	$('#faq').addClass('active');
+
+          $('#bgndVideo-video-faq').YTPPlay();
+        }else {
+
+          $('#bgndVideo-video-faq').YTPPause();
         }
 
-
+        if(sectionId==='video-1'){
+         // $('#bgndVideo-video-1').YTPPlay();
+          document.querySelector('.btnPlayVideo').style.display = 'block';
+        }else {
+          $('#bgndVideo-video-1').YTPPause();
+				}
 				$( '#scrollIndicator' ).addClass( 'active' );
 				if ( null != $previousSection ) {
 					prevSectionId = $previousSection[0].attributes.id.value;
@@ -197,7 +222,6 @@ $(document).ready( function() {
 function textTyping() {
   $('.faq-section__item-title').each(function (i) {
     let text = $(this).text();
-    //$(this).css('min-height', $(this).height() + 10 + 'px')
     $(this).before('<div class="typed-strings" id="typed-'+i+'"><p>'+text+'</p></div>');
     $(this).html('<span id="text-typed-'+i+'"></span>');
 
@@ -219,10 +243,12 @@ function textTyping() {
   },500);
 }
 
+/*
 if(window.outerWidth < 943){
   textTyping();
 }
-console.log(window.outerWidth < 943);
+*/
+
 
 
 
@@ -255,10 +281,19 @@ console.log(window.outerWidth < 943);
   };
   togglesFunc();
 
+  $('#bgndVideo-video-1,#bgndVideo-video-faq').YTPlayer();
+
+  //$('#bgndVideo-video-1').YTPPlay();
 	const inputStage3 = document.getElementById('stage-3');
 	const line = document.getElementById('stage-3-line');
 	const textLine = document.getElementById('percent-stage-3');
 
 	line.style.width = inputStage3.value + '%';
   textLine.textContent = inputStage3.value + '%'
+
+
+  document.querySelector('.btnPlayVideo').addEventListener('click',function () {
+    this.style.display = 'none';
+    $('#bgndVideo-video-1').YTPPlay();
+  })
 });

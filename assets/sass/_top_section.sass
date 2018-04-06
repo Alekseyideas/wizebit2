@@ -18,12 +18,11 @@
 
 		.anim-logo
 			margin: 0 auto
-			max-width: 586px
+			max-width: 900px
 			position: relative
 			width: 100%
-
 			@media screen and (max-width: 380px)
-				margin: 50px auto 0;
+				margin: 50px auto 0
 
 			.wizebit-logo-link
 				bottom: 130px
@@ -95,7 +94,7 @@
 			left: 5px
 
 	.right-nav
-		right: 68px;
+		right: 68px
 		position: absolute
 		top: 50px
 
@@ -116,7 +115,7 @@
 
 		.menu
 			li
-				margin-bottom: 15px;
+				margin-bottom: 15px
 				a
 					color: #666
 					font-family: digital-7
@@ -127,7 +126,7 @@
 					text-transform: uppercase
 
 					&:hover, &.active-scrollsection, &.curent_page
-						color: #fff
+						color: #2e92c8
 
 						&:before
 							display: block
@@ -176,6 +175,11 @@
 							width: 100%
 
 		.right-menu
+			&__logo
+				img
+					width: 91px
+					height: auto
+
 			li
 				text-align: right
 
@@ -190,7 +194,7 @@
 							display: block
 
 					.square-block
-						background-color: #fff
+						background-color: #2e92c8
 						display: none
 						height: 10px
 						position: absolute
@@ -207,3 +211,27 @@
 		.right-side
 			.cyber-crime-stats-list-wrapper
 				margin: auto
+
+
+
+
+.top
+	&__social-links
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		z-index: 1
+		top: 0
+		width: 100%
+		left: 0
+		padding: 10px 0
+		a
+			margin: 0 15px
+			opacity: .3
+			transition: .2s
+			img
+				width: auto
+				height: 20px
+			&:hover
+				opacity: 1

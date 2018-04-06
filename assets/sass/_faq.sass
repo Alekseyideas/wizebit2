@@ -1,5 +1,6 @@
 .page__faq
-  background: url('../img/bhg.jpg') no-repeat center / cover !important
+  //background: url('../img/bhg.jpg') no-repeat center / cover !important
+  background: black !important
   @media screen and (max-width: 1199px)
     padding: 40px 0
 
@@ -44,7 +45,8 @@
   &__item
     opacity: 0
     transition: .2s
-
+    @media screen and (max-width: 992px)
+      opacity: 1
     &.active
       .faq-section__item-title
         color: black
