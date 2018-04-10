@@ -1,4 +1,5 @@
 $(document).ready( function() {
+    document.querySelector('.scroll-indicator-wrapper').style.display = 'none';
 	$( document ).scroll( function() {
 		var scrollPosition = $( document ).scrollTop();
 		if ( 991 < $(window).width() ) {
@@ -75,6 +76,11 @@ $(document).ready( function() {
 			after: function( $currentSection, $previousSection ) {
         var sectionId = $currentSection[0].attributes.id.value;
 
+        if(sectionId==='top'){
+        	document.querySelector('.scroll-indicator-wrapper').style.display = 'none';
+		}else {
+            document.querySelector('.scroll-indicator-wrapper').style.display = 'block';
+		}
         if(sectionId==='wizebox'){
         	document.getElementById('path').style.opacity = 1;
           new Vivus('path',
@@ -87,10 +93,12 @@ $(document).ready( function() {
             }
 						,myCallback);
           function myCallback(){
-            console.log(sectionId);
+            document.querySelector('.wizebox-ui').style.opacity = 1;
 					}
 
-				}
+				}else {
+            document.querySelector('.wizebox-ui').style.opacity = 0;
+		}
         if(sectionId==='wizebox-mini'){
           $('.wizebox-mini-image').fadeIn();
 				}

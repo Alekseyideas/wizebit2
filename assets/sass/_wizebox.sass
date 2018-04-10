@@ -1,10 +1,26 @@
 .wizebox-block-wrapper
+  .wizebox-cover
+    position: relative
+  .wizebox-ui
+    position: absolute
+    top: 0
+    opacity: 0
+    transition: .5s
+    margin-top: 5px
+    width: 100%
+    height: auto
+    @media screen and (max-width: 964px)
+      opacity: 1
   .right-side,
   .left-side
     @media screen and (max-width: 767px)
       float: none !important
+
+  @media screen and (min-width: 1200px) and (max-height: 1000px)
+    padding-top: 50px !important
   @media screen and (min-width: 1200px) and (max-height: 800px)
     padding-top: 10px !important
+
   h2.section-title
     display: block
     font-weight: 300
@@ -72,13 +88,24 @@
       text-align: left
       font-weight: 300
       color: #16b8ed
-
   #path
     width: 100%
     margin: 0 0 30px 0
     display: block
-    @media screen and (min-width: 1200px)
+    @media screen and (min-width: 1200px) and (min-height: 1300px)
+      width: 600px
       opacity: 0
+    @media screen and (min-width: 1200px) and (max-height: 1300px)
+      width: 560px
+      opacity: 0
+    @media screen and (min-width: 1200px) and (max-height: 1000px)
+      width: 450px
+      opacity: 0
+    @media screen and (min-width: 1200px) and (max-height: 800px)
+      width: 360px
+      opacity: 0
+
+
   &--mini
     h2.section-title
       font-size: 55px
