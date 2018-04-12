@@ -1,0 +1,42 @@
+.section-info__links li{
+  list-style: none;
+}
+.wlogo{
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+@media screen and (min-width: 1200px){
+  .wizebox-cover{
+    margin-left: 90px;
+  }
+
+  .right-menu{
+    right: 64px;
+    position: fixed;
+  }
+
+  .hamburger-box{
+    position: fixed;
+    right: 64px;
+    top: 15px;
+  }
+  .active-menu .hamburger-box{
+    display: block !important;
+  }
+  .active-menu .right-menu{
+    display: none;
+  }
+  .top-section .hamburger-box{
+    display: none !important;
+  }
+  .top-section .right-menu{
+    display: block;
+  }
+
+}
+@media screen and (max-width: 1600px){
+    body .page-backgorund .top-block-wrapper .anim-logo {
+      max-width: 700px;
+  }
+}

@@ -1,0 +1,42 @@
+body .page-backgorund{
+  background: white;
+}
+.wizebox-block-wrapper h4.sub-title,
+.wizebox-block-wrapper .section-info h5,
+body .page-backgorund .sub-title,
+.road-map__block-box
+{
+  color: black;
+}
+.road-map .prev-block-info{
+  color: #999999;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  background-color: #999999;
+}
+.wizebit_landing_section.ai-block-wrapper .left-side .videoLink,
+body .page-backgorund .videoLink{
+  color: #16b8ed;
+}
+body .page-backgorund .videoLink:before,
+.wizebit_landing_section.ai-block-wrapper .left-side .videoLink:before{
+  background: url(../img/rhombus-blue.png) no-repeat center/cover;
+}
+
+.page-team__member-name{
+  color: black;
+}
+/*
+body .page-backgorund .section-title,
+.wizebox-block-wrapper .section-info__links li a,
+.section-sub-title,
+.article-block-wrapper article h5,
+.wizebit_landing_section.ai-block-wrapper .left-side .ai__info-title,
+.keys-block-wrapper .keys__info-title,
+.road-map__block--blue .road-map__block-title
+{
+  color: blue;
+}
+.road-map__block--blue .road-map__line{
+  background: blue;
+}*/
