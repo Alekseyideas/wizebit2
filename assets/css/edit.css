@@ -40,3 +40,8 @@
       max-width: 700px;
   }
 }
+@media screen and (max-height: 760px) and (min-width: 1300px){
+  body .page-backgorund .top-block-wrapper .anim-logo {
+    max-width: 630px;
+  }
+}
